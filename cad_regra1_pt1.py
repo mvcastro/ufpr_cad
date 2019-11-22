@@ -25,6 +25,4 @@ layer_sem_cad.SetAttributeFilter("\"tipo_ordem\" = 'OUTROS' OR \"AWC_%_coun\" >0
 for feat in layer_sem_cad:
     layer_sem_cad.DeleteFeature(feat.GetFID())
 
-layer_com_cad = None
-layer_sem_cad = None
-dataSource = None
+dataSource.Destroy()
